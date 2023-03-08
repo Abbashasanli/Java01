@@ -34,7 +34,7 @@ public class DynamicInputapp {
         System.out.println(word.toLowerCase());
         System.out.println(word.charAt(0));
         System.out.println(word.length() - 2);
-        System.out.println(word.repeat(4));
+        System.out.println(word.repeat(6));
         System.out.println(word.trim());
 
     }
