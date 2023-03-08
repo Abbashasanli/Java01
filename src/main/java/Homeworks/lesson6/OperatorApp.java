@@ -6,6 +6,7 @@ public class OperatorApp {
         System.out.println(a++);
         System.out.println(a);
         System.out.println(++a);
+        System.out.println(a++);
 
     }
 }
