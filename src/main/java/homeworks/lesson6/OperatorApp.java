@@ -1,4 +1,4 @@
-package Homeworks.lesson6;
+package homeworks.lesson6;
 
 public class OperatorApp {
     public static void main(String[] args) {

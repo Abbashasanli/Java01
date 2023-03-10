@@ -1,6 +1,5 @@
-package Homeworks.lesson6;
+package homeworks.lesson6;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class DynamicInputapp {

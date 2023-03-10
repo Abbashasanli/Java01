@@ -1,4 +1,4 @@
-package Homeworks.lesson5;
+package homeworks.lesson5;
 
 public class TernoryOperator {
     public static void main(String[] args) {

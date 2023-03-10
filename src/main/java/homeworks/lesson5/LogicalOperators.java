@@ -1,6 +1,4 @@
-package Homeworks.lesson5;
-
-import java.security.spec.RSAOtherPrimeInfo;
+package homeworks.lesson5;
 
 public class LogicalOperators {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Homeworks.lesson7;
+package homeworks.lesson7;
 
 import java.util.Scanner;
 
@@ -12,10 +12,13 @@ public class Condition {
             System.out.println("fizz");
         } else if (num % 5 == 0) {
             System.out.println("buzz");
+        } else {
+            System.out.println(num);
 
 
         }
-    }}
+    }
+}
 
 
 
