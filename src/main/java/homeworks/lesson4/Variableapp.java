@@ -1,4 +1,4 @@
-package Homeworks.lesson4;
+package homeworks.lesson4;
 
 public class Variableapp {
     public static void mainv1(String[] args) {

@@ -1,7 +1,7 @@
-package Homeworks.lesson4;
+package homeworks.lesson4;
 
 
-public class Lesson4 {
+public class HelloWorld {
     public static void main(String[] args) {
 
         System.out.print("HelloWorld");

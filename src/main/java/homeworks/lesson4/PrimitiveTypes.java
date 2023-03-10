@@ -1,6 +1,6 @@
-package Homeworks.lesson4;
+package homeworks.lesson4;
 
-public class primitivetypes {
+public class PrimitiveTypes {
     public static void main(String[] args) {
         System.out.println();
     }
