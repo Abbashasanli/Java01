@@ -2,7 +2,7 @@ package homeworks.lesson9.eolymp.conditionsloops;
 
 import java.util.Scanner;
 
-public class SimpleProblemApps {
+public class SimpleProblemApp {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
