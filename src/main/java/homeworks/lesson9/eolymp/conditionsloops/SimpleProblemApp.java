@@ -1,4 +1,4 @@
-package homeworks.lesson9.eolymp;
+package homeworks.lesson9.eolymp.conditionsloops;
 
 import java.util.Scanner;
 

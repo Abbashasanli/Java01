@@ -1,4 +1,4 @@
-package homeworks.lesson9.eolymp;
+package homeworks.lesson9.eolymp.basics;
 
 public class HelloWorldApp {
     public static void main(String[] args) {
