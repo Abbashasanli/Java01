@@ -2,7 +2,7 @@ package homeworks.lesson9.eolymp.basics;
 
 import java.util.Scanner;
 
-public class AreaApp {
+public class AreaApps {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
