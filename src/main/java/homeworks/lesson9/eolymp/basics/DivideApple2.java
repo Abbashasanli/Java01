@@ -2,7 +2,7 @@ package homeworks.lesson9.eolymp.basics;
 
 import java.util.Scanner;
 
-public class DivideApple {
+public class DivideApple2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
