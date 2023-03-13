@@ -2,7 +2,7 @@ package homeworks.lesson9.eolymp.conditionsloops;
 
 import java.util.Scanner;
 
-public class LevelEducation {
+public class LevelEducations {
     public static void main(String[] args) {
         int num = new Scanner(System.in).nextInt();
         if (num == 0 && num > 12) {
