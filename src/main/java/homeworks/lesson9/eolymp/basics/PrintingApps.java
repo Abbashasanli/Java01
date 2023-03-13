@@ -1,6 +1,6 @@
 package homeworks.lesson9.eolymp.basics;
 
-public class PrintingApp {
+public class PrintingApps {
     public static void main(String[] args) {
         System.out.println("1");
         System.out.println("2");
