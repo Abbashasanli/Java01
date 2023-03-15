@@ -2,7 +2,7 @@ package homeworks.lesson9.eolymp.conditionsloops;
 
 import java.util.Scanner;
 
-public class InsideIntervals {
+public class InsideInterval {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
