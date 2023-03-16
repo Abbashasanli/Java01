@@ -12,8 +12,6 @@ public class FirstorLast {
             System.out.println("=");
         } else if (last > first) {
             System.out.println(last);
-        } else {
-            System.out.println(first);
-        }
+        } else System.out.println(first);
     }
 }
