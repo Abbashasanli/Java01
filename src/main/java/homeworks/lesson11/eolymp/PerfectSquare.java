@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PerfectSquare {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double a = scan.nextDouble();
+        int a = scan.nextInt();
         int b = (int) Math.sqrt(a);
         if (b * b == a) {
             System.out.println( b);
