@@ -3,19 +3,20 @@ package homeworks.happyfamily;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Pet {
-    private String species;
+public abstract  class Pet {
+    private Species species;
     private String nickname;
     private int age;
     private int trickLevel;
     private String[] habits;
+    public abstract void eat();
 
     public Pet(String species, String nickname) {
-        this.species = species;
+        this.species = Species.Dog;
         this.nickname = nickname;
     }
 
-    public Pet(String species, String nickname, int age, int trickLevel, String[] habits) {
+    public Pet(Species species, String nickname, int age, int trickLevel, String[] habits) {
         this.species = species;
         this.nickname = nickname;
         this.age = age;
@@ -23,9 +24,7 @@ public class Pet {
         this.habits = habits;
     }
 
-    public void eat(){
-        System.out.println("I am eating");
-    }
+
     public void respond(){
         System.out.println("Hello, owner. I am "+nickname+ ". I miss you!");
     }
@@ -33,12 +32,14 @@ public class Pet {
         System.out.println("I need to cover it up");
     }
 
-    public String getSpecies() {
-        return species;
+
+
+    public void setSpecies() {
+        setSpecies(null);
     }
 
     public void setSpecies(String species) {
-        this.species = species;
+        this.species = Species.valueOf(species);
     }
 
     public String getNickname() {
