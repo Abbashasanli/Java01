@@ -1,4 +1,4 @@
-package homeworks.lesso30;
+package homeworks.lesson29;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -10,7 +10,7 @@ public class PersonApp {
                 new Person(2, "Arif", 34, 450),
                 new Person(3, "Ziya", 34, 560)
         };
-        Arrays.sort(persons);
+        Arrays.toString(persons);
         Arrays.sort(persons, (person1, person2) -> Double.compare(person1.salary, person2.salary));
         Arrays.sort(persons, new Comparator<Person>() {
             @Override

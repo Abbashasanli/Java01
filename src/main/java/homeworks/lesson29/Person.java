@@ -1,4 +1,4 @@
-package homeworks.lesso30;
+package homeworks.lesson29;
 
 public class Person implements Comparable<Person>{
     public final int id;

@@ -1,4 +1,4 @@
-package homeworks.lesso30;
+package homeworks.lesson29;
 
 public class Comparator implements java.util.Comparator<Person> {
     @Override
