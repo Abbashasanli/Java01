@@ -1,4 +1,4 @@
-package homeworks.lesson29;
+package homeworks.lesso30;
 
 public class Person implements Comparable<Person>{
     public final int id;
@@ -12,10 +12,6 @@ public class Person implements Comparable<Person>{
         this.age = age;
         this.salary = salary;
     }
-
-
-
-
 
 
     @Override
