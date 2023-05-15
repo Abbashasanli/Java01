@@ -16,10 +16,7 @@ public class MapApp {
         System.out.println(data);
         data.replace("Elvin","1234","7667");
         System.out.println(data);
-
-
-
-
+        HashMap<Integer, String> datanames = new HashMap<>();
 
 
     }
