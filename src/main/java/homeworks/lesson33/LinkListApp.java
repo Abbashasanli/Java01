@@ -1,4 +1,4 @@
-package lesoon33;
+package homeworks.lesson33;
 
 import java.util.LinkedList;
 
@@ -16,5 +16,6 @@ public class LinkListApp {
         System.out.println(names.add("Asif"));
         System.out.println(names);
         System.out.println(names.set(2, "Asif"));
+
     }
 }

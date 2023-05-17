@@ -1,41 +1,40 @@
 package homeworks.lesson34;
 
-public class Order {
-    private int id;
-    private double price;
+import java.time.LocalDateTime;
+
+
+public final class Order<T> {
+    private final T orderId;
     private String name;
+    private double price;
+    private LocalDateTime orderTime;
 
-    public Order(int id, double price, String name) {
-        this.id = id;
-        this.price = price;
+    public Order(T orderId, String name, double price, LocalDateTime orderTime) {
+        this.orderId = orderId;
         this.name = name;
+        this.price = price;
+        this.orderTime = orderTime;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public double getPrice() {
-        return price;
+    public T getId() {
+        return orderId;
     }
 
     public String getName() {
         return name;
     }
 
-  public static int processOrder(int id){
-      return id;
-  }
-  public static int orderFood(int id){
-        return id;
-  }
+    public double getPrice() {
+        return price;
+    }
+
+    public LocalDateTime getOrderTime() {
+        return orderTime;
+    }
 
     @Override
     public String toString() {
-        return String.format("Order{id=%d, price=%s, name='%s'}", id, price, name);
+        return String.format("Order{id=%s, name='%s', price=%s, orderTime=%s}", orderId, name, price, orderTime);
     }
 }
+

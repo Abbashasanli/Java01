@@ -1,28 +1,22 @@
 package homeworks.lesson34;
 
+import java.time.LocalDateTime;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.UUID;
 
 public class OrderApp {
+    private static Queue<Order<String>> queue = new LinkedList<>();
+
     public static void main(String[] args) {
-        Queue<Integer> orders = new LinkedList<>();
-        Order a = new Order(1233, 30, "soup");
-        orders.add(a.getId());
-        System.out.println(orders);
-        Order.processOrder(34);
-        System.out.println(orders);
-        System.out.println(a);
-
-
-
-
-
-
-
-
-
+        makeOrder("big mac",30,LocalDateTime.now());
+        System.out.println(queue);
 
     }
-
+    public static void makeOrder(String name, double price, LocalDateTime orderTime) {
+        final String id = UUID.randomUUID().toString();
+        Order<String> order = new Order<>(id, name, price, orderTime);
+        queue.add(order);
     }
 
+}
