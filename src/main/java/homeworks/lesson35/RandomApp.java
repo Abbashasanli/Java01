@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class RandomApp {
     public static void main(String[] args) {
+
         int random[] = new int[20];
         for (int i = 0; i < random.length; i++) {
             random[i] = (int) (Math.random() * 100);
