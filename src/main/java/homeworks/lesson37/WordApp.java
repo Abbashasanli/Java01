@@ -12,18 +12,20 @@ public class WordApp {
         char[] chars = word.toCharArray();
         for (char c : chars) {
             Integer counts = count.get(c);
-            if (counts == null) {
+            if (null == counts) {
                 count.put(c, 1);
             } else {
                 count.put(c, counts + 1);
             }
         }
         System.out.println(count);
+
         HashMap<Character, Integer> count2 = new HashMap<>();
         for (char c : chars) {
             count2.merge(c, 1, Integer::sum);
         }
         System.out.println(count2);
+
         Map<Integer, Long> collect = word.chars()
                 .boxed()
                 .collect(Collectors
