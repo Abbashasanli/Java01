@@ -5,10 +5,13 @@ import java.io.Serializable;
 public final class Person implements Serializable {
 
     public static final long serialVersionUID = 53;
-    public final long id;
-    public final String name;
-    public final String surname;
+    public long id;
+    public String name;
+    public String surname;
     public transient String password;
+
+    public Person() {
+    }
 
     public Person(long id, String name, String surname, String password) {
         this.id = id;

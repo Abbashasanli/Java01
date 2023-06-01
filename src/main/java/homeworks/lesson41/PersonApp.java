@@ -1,42 +1,54 @@
 package homeworks.lesson41;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class PersonApp {
 
     public static final String RESOURCE = "src/main/java/homeworks/lesson41/resource/";
+    public static final Path path = Paths.get(RESOURCE, "people.ser");
 
-    public static void main(String[] args) throws RuntimeException {
+    public static void main(String[] args) throws RuntimeException, JsonMappingException {
 
-        Person aa = new Person(1, "Abbas", "Hasanli", "45t54");
+        final Person abbas = new Person(1, "Abbas", "Hasanli", "45t54");
 
+        ObjectMapper objectMapper = new ObjectMapper();
+        String abbasJson;
         try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            String a = objectMapper.writeValueAsString(aa);
-            System.out.println(a);
+            abbasJson = objectMapper.writeValueAsString(abbas);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+        System.out.println(abbasJson);
 
-        try (ObjectOutputStream oos = new ObjectOutputStream(
-                new BufferedOutputStream(new FileOutputStream(RESOURCE + "person.ser")))) {
-            oos.writeObject(aa);
+        try {
+            Files.writeString(path, abbasJson);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        String personRead;
 
         try {
-            ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(RESOURCE + "person.ser")));
-            Person person = (Person) ois.readObject();
-            System.out.println(person);
-        } catch (IOException | ClassNotFoundException e) {
+            personRead = Files.readString(path);
+            System.out.println(personRead);
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
+        try {
+            Person person = objectMapper.readValue(abbasJson, new TypeReference<>() {
+            });
+            System.out.println(personRead);
+            System.out.println(person);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
-
 
