@@ -12,7 +12,7 @@ public class ThreadApp {
                 System.out.println(Thread.currentThread().getId());
             }
         }).start();
-        new Thread(new MyThread()).getId();
+        System.out.println(new Thread(new MyThread()).getId());
 
         new Thread(new MyThread()).start();
 
