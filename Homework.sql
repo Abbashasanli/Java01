@@ -58,8 +58,8 @@ VALUES ('Anar','Rehberov',56),
        ('Ali','Aliyev',78),
         ('Ali','Sadigov',67);
 INSERT INTO FemaleStudents( First_Name,Last_Name ,Grade )
-VALUES ('Nigar','Tanriverdiyeva',98),
-       ('Sabina','Memmedova',100),
+VALUES ('Nigar','Memmedli',98),
+       ('Sabina','Tnariversiyeva',100),
        ('Aysu','Hasanli',87),
         ('Fidan','Sadigova',47);
 
