@@ -36,9 +36,8 @@ VALUES (1, 85),
        (4, 88),
        (5, 50);
 
-SELECT First_Name
-FROM Students
-WHERE (SELECT AVG(Grade)FROM Grades WHERE Grades.StudentID = Students.ID) > (SELECT AVG(Grade)FROM Grades);
+
+
  CREATE TABLE MaleStudents (
   ID serial,
   First_Name varchar(30),
